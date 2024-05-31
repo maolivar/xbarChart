@@ -111,7 +111,7 @@ if run_button:
         df_grouped['driver_id'] = df_grouped['driver_id'].astype(str)
 
     df_grouped = df_grouped[df_grouped['count']>=mincounter].copy()
-    print(df_grouped.head())
+    #print(df_grouped.head())
     fig, df_graph = gen_control_chart(df_grouped, groupvar)
 
     # Display the plot
